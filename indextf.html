@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tboy_Frsh - Twitch Streamer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #ff6600;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffe0b3;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: linear-gradient(120deg, #ff6600, #ff944d);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background: white;
+      color: #ff6600;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #ffe0b3;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .about {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .services div {
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: #ffe0b3;
+      transition: transform 0.3s;
+    }
+
+    .services div:hover {
+      transform: translateY(-10px);
+    }
+
+    .services h3 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact input, .contact textarea {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact button {
+      background: #ff6600;
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background: #cc5200;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h2>Tboy_Frsh</h2>
+      <div>
+        <a href="#">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.twitch.tv/tboy_frsh" target="_blank">Twitch</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Tboy_Frsh's World</h1>
+    <p>Join the journey of an aspiring IRL streamer, tech enthusiast, and gaming pro.</p>
+    <button onclick="window.location.href='https://www.twitch.tv/tboy_frsh';">Watch My Stream</button>
+  </section>
+
+  <section id="about">
+    <div class="about">
+      <h2>About Me</h2>
+      <p>Hey there! My name is Nathan, but you know me as Tboy_Frsh. I'm a 16-year-old streamer who loves Fortnite, exploring IRL streaming setups, and creating tech-driven content. My passion lies in delivering seamless, high-quality streams while having fun with my community!</p>
+      <p>Catch me live on Twitch, where I showcase my gaming skills, explore exciting tech, and connect with fans.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">What I Offer</h2>
+    <div class="services">
+      <div>
+        <h3>Gaming Content</h3>
+        <p>High-energy Fortnite gameplay and creative strategies.</p>
+      </div>
+      <div>
+        <h3>IRL Streaming</h3>
+        <p>Live adventures and behind-the-scenes of a tech-driven life.</p>
+      </div>
+      <div>
+        <h3>Community Interaction</h3>
+        <p>Engaging streams with fans and meaningful conversations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Tboy_Frsh. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
